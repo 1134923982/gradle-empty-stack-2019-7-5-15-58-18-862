@@ -3,6 +3,10 @@ public class Iphone extends Mobile{
 		super(name, color, brand);
 	}
 	public void call(String message) {
-		System.out.println("<iPhone>Message : ["+message+"]");
+		if (message.length() > 30) {
+			System.out.println("<iPhone> Message cannot be sent");
+		} else {
+			System.out.println("<iPhone>Message : [" + message + "]");
+		}
 	}
 }

@@ -7,6 +7,10 @@ public class App {
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        Iphone iphone = new Iphone("iphone1","red","apple");
+        iphone.call("hahha");
+        System.out.println(iphone.toString());
+        Person p =new Person("jack", iphone);
+        p.sendMessage("ddddddddddddd");
     }
 }

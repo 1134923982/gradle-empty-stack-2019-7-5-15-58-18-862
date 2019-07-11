@@ -10,6 +10,8 @@ public class Mobile {
 		this.brand = brand;
 	}
 
+
+
     public void call(String message) {
         System.out.println("Message : "+message);
     }
